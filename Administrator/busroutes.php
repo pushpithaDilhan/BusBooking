@@ -16,6 +16,7 @@
 			$table .= '<td>' . $record['first_station'] . '</td>';
 			$table .= '<td>' . $record['second_station'] . '</td>';
 			$table .= '<td>' . $record['price'] . '</td>';
+			$table .= '<td><input name="delete" type="submit" value="Remove" onclick="return confirm(\'Remove this route?\')"></td>';
 			$table .= '</tr>';
 		}
 	}
@@ -38,6 +39,9 @@
 	</header>
 
 	<?php echo "$table"; ?>
+	<p>
+	<input type="submit" value="Add" name="add_route">
+	</p>
 </body>
 </html>
 
