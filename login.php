@@ -11,21 +11,22 @@ if($link === false){
 }
  
 // Escape user inputs for security
-$username = mysqli_real_escape_string($link, $_POST['username']);
+$username = md5(mysqli_real_escape_string($link, $_POST['username']));
 $password = md5(mysqli_real_escape_string($link, $_POST['password']));
 
-//check if passwords are equal
-if($password!=$password_retype){
-    echo "Passwords are not matching";
-}else{
-    // attempt insert query execution
-    $sql = "INSERT INTO customer (name, NIC , address , occupation , email , username , password ) 
-    VALUES ('$name', '$addr', '$nic', '$occupation', '$email','$username','$password')";
-if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    // attempt search query execution
+$sql = "SELECT IFNULL((SELECT role FROM login WHERE username={$username} AND password={$password}),'not found')";
+$result = mysql_query($sql,$link);
+$row = mysql_fetch_assoc($result);
+
+if ($row[0] == 'cus') {
+    readfile('Customer/customerhomepage.html');
 }
+else if($row[0] == 'not found'){
+    echo "Your username or password is wrong. Try again" ;
+}    
+else{
+    echo "Somthing is wrong" ;
 }
  
 // close connection
