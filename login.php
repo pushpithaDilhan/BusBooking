@@ -14,19 +14,28 @@ if($link === false){
 $username = md5(mysqli_real_escape_string($link, $_POST['username']));
 $password = md5(mysqli_real_escape_string($link, $_POST['password']));
 
-    // attempt search query execution
-$sql = "SELECT IFNULL((SELECT role FROM login WHERE username={$username} AND password={$password}),'not found')";
-$result = mysql_query($sql,$link);
-$row = mysql_fetch_assoc($result);
+// attempt search query execution
+$sql = "SELECT IFNULL((SELECT role FROM login WHERE username='$username' AND password= '$password'),'not found')";
 
-if ($row[0] == 'cus') {
+$result = mysqli_query( $link,$sql) or die('Could not look up user information; ' . mysqli_error($link));
+
+$row  = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+$key = "IFNULL((SELECT role FROM login WHERE username='$username' AND password= '$password'),'not found')";
+
+
+
+if ($row[$key] == 'cus') {
     readfile('Customer/customerhomepage.html');
 }
-else if($row[0] == 'not found'){
+if($row[$key]=='adm'){
+    readfile('Administrator/adminhomepage.php');
+}
+if($row[$key]=='ope'){
+    readfile('Operator/operatorhome.html');
+}
+else if($row[$key] == 'not found'){
     echo "Your username or password is wrong. Try again" ;
-}    
-else{
-    echo "Somthing is wrong" ;
 }
  
 // close connection
