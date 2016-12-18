@@ -34,7 +34,7 @@ if($password!=$password_retype){
     VALUES ( '$nic','$username','$password','cus')";
     
 if(mysqli_query($link, $sql) & mysqli_query($link,$sql_login)){
-    echo "Records added successfully.";
+    readfile('regsuccess.html');
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
