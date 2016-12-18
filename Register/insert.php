@@ -26,9 +26,14 @@ if($password!=$password_retype){
     echo "Passwords are not matching";
 }else{
     // attempt insert query execution
+
     $sql = "INSERT INTO customer (name, NIC , address , occupation , email , username , password ) 
     VALUES ('$name', '$addr', '$nic', '$occupation', '$email','$username','$password')";
-if(mysqli_query($link, $sql)){
+
+    $sql_login = "INSERT INTO login ( role_id , username , password ,role ) 
+    VALUES ( '$nic','$username','$password','cus')";
+    
+if(mysqli_query($link, $sql) & mysqli_query($link,$sql_login)){
     echo "Records added successfully.";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
