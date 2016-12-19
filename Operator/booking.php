@@ -64,24 +64,96 @@
         <!-- /.container -->
     </nav>
 	<!-- jQuery Version 1.11.1 -->
+
+
+
+
+
+
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     
-    	<div class="container"><form action="validatebooking.php" method="post">
-		Customer NIC: <input type="text" name="customer_id"><br><br>
-		Name        : <input type="text" name="name"><br><br>
-		Bus registration number: <input type="text" name="bus_id"><br><br>
-		Seats to be booked: <input type="text" name="seat_count"><br><br>
-		Start station: <input type="text" name="start"><br><br>
-		End station : <input type="text" name="ending"><br><br>
-		<input type="submit" value="Reserve">
-		</div>
+    	
+
+    	<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <form action="validatebooking.php" method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="name">
+       Customer NIC
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="name" name="customer_id" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="name1">
+       Name
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="name1" name="name" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="name2">
+       Bus Reg No
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="name2" name="bus_id" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="number">
+       Number of seats to be booked
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="number" name="seat_count" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="name3">
+       Start
+      </label>
+      <input class="form-control" id="name3" name="start" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="name4">
+       End
+      </label>
+      <input class="form-control" id="name4" name="ending" type="text"/>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+
 
 
 		
-</form>
+
 
 </body>
 
