@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Add bus</title>
+<title>Add bus route</title>
 
 <!-- bootstrap -->
 <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
@@ -55,33 +55,40 @@
 </nav>
 
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
-<form action="insert_bus_info.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+<form action="insert_bus_route_info.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
 	<div class="form-group">
-    	<label for="registration_number" class="control-label col-sm-2">Registration number:</label>
+    	<label for="route_number" class="control-label col-sm-2">Route number:</label>
         <div class="col-sm-10">
-        <input type="text" name="reg_no" class="form-control" id="Reg_no" placeholder="Enter bus registration number">
+        <input type="text" name="route_no" class="form-control" id="route_no" placeholder="Enter bus registration number">
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="owner" class="control-label col-sm-2">Name of the owner:</label>
+    	<label for="first_station" class="control-label col-sm-2">First station:</label>
         <div class="col-sm-10">
-        <input type="text" name="owner" class="form-control" id="Owner" placeholder="Enter owner's name">
+        <input type="text" name="first_station" class="form-control" id="first_station" placeholder="Enter first station">
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="route_no" class="control-label col-sm-2">Route number:</label>
+        <label for="second_station" class="control-label col-sm-2">Second station:</label>
         <div class="col-sm-10">
-        <input type="text" name="route_no" class="form-control" id="Route_no" placeholder="Enter bus route number">
+        <input type="text" name="second_station" class="form-control" id="second_station" placeholder="Enter second station">
+        </div>
+    </div>
+
+    <div class="form-group">
+    	<label for="price" class="control-label col-sm-2">Price:</label>
+        <div class="col-sm-10">
+        <input type="text" name="price" class="form-control" id="price" placeholder="Enter price of the journey">
         </div>
     </div>
 
     <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-    <input type="submit" value="Submit" class="btn btn-success" onclick= "parent.location=('insert_bus_info.php')">
+    <input type="submit" value="Submit" class="btn btn-success">
      &nbsp;&nbsp;&nbsp;
-    <a href="add_bus.php"><button type="button" class="btn btn-danger">Cancel</button></a>
+    <a href="add_bus_route.php"><button type="button" class="btn btn-danger">Cancel</button></a>
     </div>
     </div>
     

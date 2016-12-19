@@ -5,11 +5,12 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
  
-$reg_no = mysqli_real_escape_string($link, $_POST['reg_no']);
-$owner = mysqli_real_escape_string($link, $_POST['owner']);
 $route_no = mysqli_real_escape_string($link, $_POST['route_no']);
+$first_station = mysqli_real_escape_string($link, $_POST['first_station']);
+$second_station = mysqli_real_escape_string($link, $_POST['second_station']);
+$price = mysqli_real_escape_string($link, $_POST['price']);
 
-$sql = "INSERT INTO bus (registration_no, owner, route_no) VALUES ('$reg_no', '$owner', '$route_no')";
+$sql = "INSERT INTO route (route_no, first_station, second_station, price) VALUES ('$route_no', '$first_station', '$second_station', '$price')";
 
 if(mysqli_query($link, $sql)){
     readfile('regsuccess.html');
