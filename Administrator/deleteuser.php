@@ -3,7 +3,7 @@
 	$id = $_GET['id'];
 	$link = mysqli_connect('localhost', 'root', '', 'busticketing') or die('Connection error!');	 
 
-	$query = "DELETE FROM route WHERE route_no = '$id'";
+	$query = "DELETE FROM customer WHERE NIC = '$id'";
 
 	if(mysqli_query($link, $query)){
     readfile('regsuccess.html');

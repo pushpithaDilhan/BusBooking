@@ -18,7 +18,7 @@
 			$table .= '<td>' . $record['address'] . '</td>';
 			$table .= '<td>' . $record['occupation'] . '</td>';
 			$table .= '<td>' . $record['role'] . '</td>';
-			$table .= '<td><input name="delete" type="submit" value="Remove" onclick="return confirm(\'Remove this user?\')"></td>';
+			$table .= "<td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href='deleteuser.php?id=".$record['NIC']."'>Remove</a></td><tr>";
 			$table .= '</tr>';
 		}
 	}
@@ -28,10 +28,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<link href = "../style/css/hoverbutton.css" rel = "stylesheet">
-
-
 	<meta charset="UTF-8">
 	<title>Users</title>
 	<style>
@@ -45,6 +41,7 @@
 	</header>
 
 	<?php echo "$table"; ?>
+	
 	
 </body>
 </html>

@@ -16,11 +16,10 @@
 			$table .= '<td>' . $record['first_station'] . '</td>';
 			$table .= '<td>' . $record['second_station'] . '</td>';
 			$table .= '<td>' . $record['price'] . '</td>';
-			$table .= '<td><input name="delete" type="submit" value="Remove" onclick="return confirm(\'Remove this route?\')"></td>';
+			$table .= "<td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href='deleterow.php?id=".$record['route_no']."'>Remove</a></td><tr>";
 			$table .= '</tr>';
 		}
 	}
-
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +39,7 @@
 
 	<?php echo "$table"; ?>
 	<p>
-	<input type="submit" value="Add" name="add_route">
+	<input type="submit" value="Add" name="add_route" onclick= "parent.location=('add_bus_route.php')">
 	</p>
 </body>
 </html>
