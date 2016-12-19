@@ -1,12 +1,35 @@
-
-<?php
-
-	$username = "Siripala";
-	
+<?php require_once('connection.php');
+$username="siripala";
 ?>
 
+<?php  
+	
+	$query ="SELECT * FROM bus";
+
+	$result_set = mysqli_query($connection,$query);
+	if($result_set){
+		$table = '<table>';
+		$table .='<tr><th>Registration Number </th><th>Route Number</th><th>Company </th><th>condition</th><th> Number of Seats </th></tr>';
+	while($record = mysqli_fetch_assoc($result_set)){
+		 $table .='<tr>';
+		 $table .='<td>'.$record['reg_id'].'</td>';
+		 $table .='<td>'.$record['route_id'].'</td>';
+		 $table .='<td>'.$record['company'].'</td>';
+		 $table .='<td>'.$record['bus_condition'].'</td>';
+         $table .='<td>'.$record['num_of_seats'].'</td>';
+		 $table .='</tr>';
+
+	}
+	$table .='</table>';
+	}else{
+		echo "reading failed!";
+	}
+	
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<br></br>
 
 <head>
 
@@ -16,7 +39,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Booking list</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,13 +58,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+    <h2>Bus details!</h2>
+    <br>
+    </div>
+	</head>
+	<body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -51,8 +73,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><?php echo $username ?></a>
-            </div>
+                <a class="navbar-brand" href="index.php"><?php echo $username ?></a>
+                </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -71,35 +93,20 @@
         </div>
         <!-- /.container -->
     </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-    	<a href="booking.php" class="btn btn-info" role="button">Reservation</a>
-    	<br>
-    	<br>
-    	<a href="avalableseats.php" class="btn btn-info" role="button">Check booking list</a>
-    	<br>
-    	<br>
-    	<a href="busdetails.php" class="btn btn-info" role="button">Bus Details</a>
-        
-    </div>
-    <!-- /.container -->
-
-    <body>
-		
-
-		
-
-	</body>
-
-    <!-- jQuery Version 1.11.1 -->
+	<!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-</body>
-
+    </body>
+<style type="text/css">
+	table{border-collapse: collapse;}
+	td,th{border: 1px solid black; padding: 10px}
+</style>
+<div class="container">
+<?php 
+	echo $table;
+?>
+</div>
 </html>
-
-
+<?php mysqli_close($connection); ?>

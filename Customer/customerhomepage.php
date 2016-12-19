@@ -2,13 +2,13 @@
 <head>
     <link rel="title icon" type="image/x-icon" href="style/images/favicon.ico" />
     <!-- Bootstrap -->
-    <link href = "../style/css/bootstrap.min.css" rel = "stylesheet" />
+    <link href = "style/css/bootstrap.min.css" rel = "stylesheet">
     <title>Online Bus Ticketing</title>
 
 
-    <link rel="stylesheet" href="../style/css/styles.css" />
+    <link rel="stylesheet" href="style/css/styles.css">
 </head>
-<body id="bgbody"  background="../style/images/image1.jpg" style="background-size:cover ">
+<body id="bgbody" >
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../common/routelist.php">Search Routes</a>
+            <a class="navbar-brand" href="common/routelist.php">Search Routes</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -34,6 +34,14 @@
                 </li>
                 <li>
                     <a href="#">Contact</a>
+                </li>
+
+                <li>
+                    <a href="customer/bookings.php">Bookings</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Sign Out</a>
                 </li>
 
                 <li>
@@ -51,6 +59,8 @@
     </div>
     <!-- /.container -->
 </nav>
+
+<h1><?php session_start();echo $_SESSION['role_id'] ;?></h1>
 
 
 
