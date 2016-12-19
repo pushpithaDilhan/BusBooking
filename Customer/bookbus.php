@@ -34,7 +34,7 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="common/routelist.php">Search Routes</a>
+            <a class="navbar-brand" href="bookbus.php">Search Routes</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,7 +50,7 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
                 </li>
 
                 <li>
-                    <a href="customer/bookings.php">Bookings</a>
+                    <a href="bookings.php">Bookings</a>
                 </li>
 
                 <li>
@@ -72,8 +72,9 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
             <label for="Name" class="control-label col-sm-2">Route:</label>
             <div class="col-sm-10">
                 <select name="route_name" class="form-control dropdown-toggle btn btn-default">
+                    <option >Select Route</option>
                     <?php while ($row = mysql_fetch_assoc($result)):?>
-                    <option value="route"><?php echo $row['route_no'] ." ".$row['first_station']." - ".$row['second_station']?></option>
+                    <option value="<?php echo $row['route_no']?>" ><?php echo $row['route_no'] ." ".$row['first_station']." - ".$row['second_station']?></option>
                     <?php endwhile ?>
                 </select>
             </div>
@@ -84,16 +85,16 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
             <div class="col-sm-10">
                 <select name="start_station" class="form-control dropdown-toggle btn btn-default">
                     <?php while ($row = mysql_fetch_assoc($result_locations)):?>
-                        <option value="start"><?php echo $row['first_station'] ?></option>
+                        <option value="<?php echo $row['first_station'] ?>"><?php echo $row['first_station'] ?></option>
                     <?php endwhile ?>
                 </select>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="address" class="control-label col-sm-2">Date:</label>
+            <label for="date" class="control-label col-sm-2">Date:</label>
             <div class="col-sm-10">
-                <input type="text" name="birthdate" value="01/01/2016" class="form-control" />
+                <input type="text" name="date" value="<?php echo date("Y/m/d"); ?>" class="form-control" />
             </div>
         </div>
         <script type="text/javascript">
@@ -111,10 +112,10 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
             <label for="nic" class="control-label col-sm-2">Time:</label>
             <div class="col-sm-10">
                 <select name="time" class="form-control">
-                    <option value="1">8.00 AM</option>
-                    <option value="2">9.00 AM</option>
-                    <option value="3">10.00 AM</option>
-                    <option value="4">11.00 AM</option>
+                    <option value="8.00 AM">8.00 AM</option>
+                    <option value="9.00 AM">9.00 AM</option>
+                    <option value="10.00 AM">10.00 AM</option>
+                    <option value="11.00 AM">11.00 AM</option>
                 </select>
             </div>
         </div>
@@ -122,7 +123,7 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
         <div class="form-group">
             <label for="email" class="control-label col-sm-2">Seats needed:</label>
             <div class="col-sm-10">
-                <input type="number" name="email" class="form-control" id="email" >
+                <input type="number" name="seats" class="form-control" id="seats" >
             </div>
         </div>
 

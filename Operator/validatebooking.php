@@ -15,7 +15,7 @@
 
 
 	$query ="INSERT INTO booking ( customer_id , bus_id ,seat_range , start , ending ,travel_date ) VALUES ( '{$cus_id}','{$bus_id}','{$seats}','{$start}','{$end}','{$date}' )";
-	$query1 ="INSERT INTO customer ( customer_id ,name ) VALUES ( '{$cus_id}','{$name}')";
+	//$query1 ="INSERT INTO customer ( customer_id ,name ) VALUES ( '{$cus_id}','{$name}')";
 
 	$result = mysqli_query($connection,$query);
 
