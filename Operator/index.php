@@ -75,13 +75,12 @@
     <!-- Page Content -->
     <div class="container">
     	<a href="booking.php" class="btn btn-info" role="button">Reservation</a>
-    	<br>
-    	<br>
+    	&nbsp;&nbsp;&nbsp;
     	<a href="avalableseats.php" class="btn btn-info" role="button">Check booking list</a>
-    	<br>
-    	<br>
+    	&nbsp;&nbsp;&nbsp;
     	<a href="busdetails.php" class="btn btn-info" role="button">Bus Details</a>
-        
+        &nbsp;&nbsp;&nbsp;
+    	<a href="addbus.php"><button type="button" class="btn btn-info">Add a Bus</button></a>
     </div>
     <!-- /.container -->
 

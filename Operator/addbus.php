@@ -1,8 +1,16 @@
+<?php
+
+$link = mysql_connect('localhost','root');
+mysql_select_db('userdb',$link);
+$result = mysql_query('SELECT * FROM route',$link);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Add bus</title>
+<title>Register</title>
 
 <!-- bootstrap -->
 <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
@@ -55,33 +63,46 @@
 </nav>
 
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
-<form action="insert_bus_info.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+<form action="addbusinsert.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
 	<div class="form-group">
-    	<label for="registration_number" class="control-label col-sm-2">Registration number:</label>
+    	<label for="bus_id" class="control-label col-sm-2">Bus Number:</label>
         <div class="col-sm-10">
-        <input type="text" name="reg_no" class="form-control" id="Reg_no" placeholder="Enter bus registration number">
+        <input type="text" name="bus_id" class="form-control" id="bus_id" placeholder="Enter bus number">
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="owner" class="control-label col-sm-2">Name of the owner:</label>
+            <label for="Name" class="control-label col-sm-2">Route:</label>
+            <div class="col-sm-10">
+                <select name="route_name" class="form-control dropdown-toggle btn btn-default">
+                    <?php while ($row = mysql_fetch_assoc($result)):?>
+                    <option value="<?php echo $row['route_no'] ?"><?php echo $row['route_no'] ." ".$row['first_station']." - ".$row['second_station']?></option>
+                    <?php endwhile ?>
+                </select>
+            </div>
+    </div>
+
+
+    <div class="form-group">
+    	<label for="bus_condition" class="control-label col-sm-2">NIC:</label>
         <div class="col-sm-10">
-        <input type="text" name="owner" class="form-control" id="Owner" placeholder="Enter owner's name">
+        <input type="text" name="bus_condition" class="form-control" id="bus_condition" placeholder="Ac / Luxuary /super Luxuary / Normal ">
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="route_no" class="control-label col-sm-2">Route number:</label>
+    	<label for="num_of_seats" class="control-label col-sm-2">Number of seats:</label>
         <div class="col-sm-10">
-        <input type="text" name="route_no" class="form-control" id="Route_no" placeholder="Enter bus route number">
+        <input type="text" name="num_of_seats" class="form-control" id="num_of_seats" placeholder="Enter your occupation">
         </div>
     </div>
 
+   
     <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-    <input type="submit" value="Submit" class="btn btn-success" onclick= "parent.location=('insert_bus_info.php')">
+    <input type="submit" value="Add bus" class="btn btn-success">
      &nbsp;&nbsp;&nbsp;
-    <a href="add_bus.php"><button type="button" class="btn btn-danger">Cancel</button></a>
+    <a href="index.php"><button type="button" class="btn btn-danger">Cancel</button></a>
     </div>
     </div>
     
