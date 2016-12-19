@@ -15,6 +15,7 @@
 			$table .= '<td>' . $record['registration_no'] . '</td>';
 			$table .= '<td>' . $record['owner'] . '</td>';
 			$table .= '<td>' . $record['route_no'] . '</td>';
+			$table .= '<td><input name="delete" type="submit" value="Remove" onclick="return confirm(\'Remove this bus?\')"></td>';
 			$table .= '</tr>';
 		}
 	}
@@ -37,6 +38,8 @@
 	</header>
 
 	<?php echo "$table"; ?>
+
+	<p><input type="submit" value="Add" name="add_bus"></p>
 </body>
 </html>
 
