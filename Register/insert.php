@@ -28,7 +28,7 @@ if($password!=$password_retype){
     // attempt insert query execution
 
     $sql = "INSERT INTO customer (name, NIC , address , occupation , email , username , password ) 
-    VALUES ('$name', '$addr', '$nic', '$occupation', '$email','$username','$password')";
+    VALUES ('$name', '$nic', '$addr', '$occupation', '$email','$username','$password')";
 
     $sql_login = "INSERT INTO login ( role_id , username , password ,role ) 
     VALUES ( '$nic','$username','$password','cus')";
