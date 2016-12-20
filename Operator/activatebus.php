@@ -12,7 +12,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Register</title>
+<title>Activate Bus</title>
 
 <!-- bootstrap -->
 <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
@@ -48,11 +48,11 @@
                     <li>
                         <a href="busdetails.php">Bus Details</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="addbus.php">Add a Bus</a>
                     </li>
-                    <li>
-                        <a href="activatebus.php">Activate Bus</a>
+                    <li class="active">
+                        <a href="addbus.php">Activate bus</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
         <!-- /.container -->
     </nav>
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
-<form action="addbusinsert.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+<form action="activatebusinsert.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
 	<div class="form-group">
     	<label for="bus_id" class="control-label col-sm-2">Bus Number:</label>
         <div class="col-sm-10">
@@ -70,32 +70,20 @@
     </div>
 
     <div class="form-group">
-        <label for="route_id" class="control-label col-sm-2">Bus Number:</label>
+        <label for="date" class="control-label col-sm-2">Date</label>
         <div class="col-sm-10">
         <input type="text" name="route_id" class="form-control" id="route_id" >
         </div>
     </div>
 
-    <div class="form-group">
-    	<label for="bus_condition" class="control-label col-sm-2">NIC:</label>
-        <div class="col-sm-10">
-        <input type="text" name="bus_condition" class="form-control" id="bus_condition" placeholder="Ac / Luxuary /super Luxuary / Normal ">
-        </div>
-    </div>
-
-    <div class="form-group">
-    	<label for="num_of_seats" class="control-label col-sm-2">Number of seats:</label>
-        <div class="col-sm-10">
-        <input type="text" name="num_of_seats" class="form-control" id="num_of_seats" placeholder="Enter your occupation">
-        </div>
-    </div>
+   
 
    
     <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-    <input type="submit" value="Add bus" class="btn btn-success">
+    <input type="submit" value="Available" class="btn btn-success">
      &nbsp;&nbsp;&nbsp;
-    <a href="index.php"><button type="button" class="btn btn-danger">Cancel</button></a>
+    <a href="index.php"><button type="button" class="btn btn-danger">Not Available</button></a>
     </div>
     </div>
     

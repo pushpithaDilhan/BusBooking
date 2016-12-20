@@ -78,13 +78,19 @@ $username="siripala";
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="booking.php">Reservation</a>
+                    </li>
+                    <li class = "active">
+                        <a href="avalableseats.php">Booking List</a>
+                    </li>
+                    <li >
+                        <a href="busdetails.php">Bus Details</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="addbus.php">Add a Bus</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="activatebus.php">Activate Bus</a>
                     </li>
                 </ul>
             </div>

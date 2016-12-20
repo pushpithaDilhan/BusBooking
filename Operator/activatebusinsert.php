@@ -1,12 +1,13 @@
 
-<?php require_once('connection.php');?>
+<?php require_once('connection.php');
+?>
 session_start();
 
 <?php  
 
 
-	$reg_id = $_POST["bus_id"];
-	$route_id= $_POST["route_id"];
+	$bus_id = $_POST["bus_id"];
+	$route_id= mysqli_query($connection,'SELECT route_id FROM bus WHERE reg_id = $bus_id LIMIT 1');
 	$company=$_SESSION["company"];
 	$bus_condition =$_POST["bus_condition"];
 	$num_of_seats  = date("num_of_seats");

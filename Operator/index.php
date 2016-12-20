@@ -1,14 +1,30 @@
 
 <?php
+//I need username parsing in session! -replace the indicated line after parsing the session
 
-	$username = "Siripala";
-	
+	session_start();
+	//$username = $_SESSION['username'];
+	$username = "Sankaja";
+	$_SESSION['username'] = $username;
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
+    <!--icon for browser table-->
+    <link rel="title icon" type="image/x-icon" href="../style/images/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <title>Online Bus Ticketing</title>
+         
+        
+        <link rel="stylesheet" href="../style/css/styles.css">
+    
+
+
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,19 +67,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><?php echo $username ?></a>
+                <a class="navbar-brand" href="index.php"><?php echo $username ?></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="booking.php">Reservation</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="avalableseats.php">Booking List</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="busdetails.php">Bus Details</a>
+                    </li>
+                    <li>
+                        <a href="addbus.php">Add a Bus</a>
+                    </li>
+                    <li >
+                        <a href="activatebus.php">Activate bus</a>
                     </li>
                 </ul>
             </div>
@@ -72,22 +95,7 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-    	<a href="booking.php" class="btn btn-info" role="button">Reservation</a>
-    	&nbsp;&nbsp;&nbsp;
-    	<a href="avalableseats.php" class="btn btn-info" role="button">Check booking list</a>
-    	&nbsp;&nbsp;&nbsp;
-    	<a href="busdetails.php" class="btn btn-info" role="button">Bus Details</a>
-        &nbsp;&nbsp;&nbsp;
-    	<a href="addbus.php"><button type="button" class="btn btn-info">Add a Bus</button></a>
-    </div>
-    <!-- /.container -->
-
     <body>
-		
-
-		
 
 	</body>
 
@@ -96,6 +104,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 
