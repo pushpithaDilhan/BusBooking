@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Add bus route</title>
+<title>Change Password</title>
 
 <!-- bootstrap -->
 <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../common/routelist.php">Search Routes</a>
+            <a class="navbar-brand" href="../common/routelist.php">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,40 +55,34 @@
 </nav>
 
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
-<form action="insert_bus_route_info.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
-	<div class="form-group">
-    	<label for="route_number" class="control-label col-sm-2">Route number:</label>
+<form action="insert_admin_new_password.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+
+    <div class="form-group">
+    	<label for="username" class="control-label col-sm-2">Username:</label>
         <div class="col-sm-10">
-        <input type="text" name="route_no" class="form-control" id="route_no" placeholder="Enter bus registration number">
+        <input type="text" name="username" class="form-control" id="username" placeholder="Enter your username">
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="first_station" class="control-label col-sm-2">First station:</label>
+    	<label for="password" class="control-label col-sm-2">New Password:</label>
         <div class="col-sm-10">
-        <input type="text" name="first_station" class="form-control" id="first_station" placeholder="Enter first station">
+        <input type="password" name="password" class="form-control" id="password" placeholder="Enter your new password">
         </div>
     </div>
 
     <div class="form-group">
-        <label for="second_station" class="control-label col-sm-2">Second station:</label>
+    	<label for="password_retype" class="control-label col-sm-2">New Password (retype):</label>
         <div class="col-sm-10">
-        <input type="text" name="second_station" class="form-control" id="second_station" placeholder="Enter second station">
-        </div>
-    </div>
-
-    <div class="form-group">
-    	<label for="price" class="control-label col-sm-2">Price:</label>
-        <div class="col-sm-10">
-        <input type="text" name="price" class="form-control" id="price" placeholder="Enter price of the journey">
+        <input type="password" name="password_retype"  class="form-control" id="password_retype" placeholder="Retype your new password">
         </div>
     </div>
 
     <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-    <input type="submit" value="Submit" class="btn btn-success">
+    <input type="submit" value="Change" class="btn btn-success">
      &nbsp;&nbsp;&nbsp;
-    <a href="busroutes.php"><button type="button" class="btn btn-danger">Cancel</button></a>
+    <a href="admin_list.php"><button type="button" class="btn btn-danger">Cancel</button></a>
     </div>
     </div>
     

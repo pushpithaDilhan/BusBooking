@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="styles.css">
 
 </head>
-<body style="background-color:#3399ff;">
+<body background = "../style/images/image3.jpg">
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -19,27 +19,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../common/routelist.php">Search Routes</a>
+            <a class="navbar-brand" href="#">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">About</a>
+                    <a href="busses.php">View Buses</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="busroutes.php">View Routes</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
-                </li>
-
-                <li>
-                    <a href="../Administrator/adminhomepage.php" >Admin test</a>
+                    <a href="userlist.php">View Customers</a>
                 </li>
 
                 <li>
-                    <a href="../Register/add-record-form.php" style="text-align:right;position:fixed;">SignUp</a>
+                    <a href="owner_list.php" >View Bus Owners</a>
+                </li>
+
+                <li>
+                    <a href="admin_list.php" >View Admins</a>
+                </li>
+
+                <li>
+                    <a href="../index.html" style="text-align:right;">Log Out</a>
                 </li>
 
 
@@ -50,20 +54,11 @@
     <!-- /.container -->
 </nav>
 
-	<header>
-		<h1>Welcome Admin</h1>
-	</header>
+	
 
-	<nav>
-		<a href="http://localhost/busbooking/index.html">log out</a>
-	</nav>
+	
 
 
-	<input type="submit" value="View Busses" name="view_busses" onclick="parent.location=('busses.php')">
-	<input type="submit" value="View Routes" name="view_routes" onclick="parent.location=('busroutes.php')">
-	<input type="submit" value="View Customers" name="view_customers" onclick= "parent.location=('userlist.php')">
-	<input type="submit" value="View Bus Owners" name="view_owners" onclick= "parent.location=('owner_list.php')">
-	<input type="submit" value="View System Administrators" name="view_admins" onclick= "parent.location=('admin_list.php')">
 
 </body>
 </html>
