@@ -12,10 +12,10 @@
 
 		while ($record = mysqli_fetch_assoc($result_set)){
 			$table .= '<tr>';
-			$table .= '<td>' . $record['registration_no'] . '</td>';
-			$table .= '<td>' . $record['owner'] . '</td>';
-			$table .= '<td>' . $record['route_no'] . '</td>';
-			$table .= "<td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href='deletebus.php?id=".$record['registration_no']."'>Remove</a></td><tr>";
+			$table .= '<td>' . $record['reg_id'] . '</td>';
+			$table .= '<td>' . $record['company'] . '</td>';
+			$table .= '<td>' . $record['route_id'] . '</td>';
+			$table .= "<td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href='deletebus.php?id=".$record['reg_id']."'>Remove</a></td><tr>";
 			$table .= '</tr>';
 		}
 	}

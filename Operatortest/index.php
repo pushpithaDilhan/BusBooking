@@ -1,3 +1,10 @@
+
+<?php
+
+	$username = "Siripala";
+	
+?>
+
 <html>
 <head>
     <link rel="title icon" type="image/x-icon" href="style/images/favicon.ico" />
@@ -8,7 +15,7 @@
 
     <link rel="stylesheet" href="style/css/styles.css">
 </head>
-<body id="bgbody" >
+<body id="bgbody" background="style/images/background.jpg" >
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -21,14 +28,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="customer/bookbus.php">Reserve</a>
+            <a class="navbar-brand" href="operator/index.php">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
 
                 <li>
-                    <a href="customer/bookings.php">Bookings</a>
+                    <a href="operator/bookbus.php">Reservation</a>
+                </li>
+
+                <li>
+                    <a href="operator/avalableseats.php">Bookings</a>
+                </li>
+
+                <li>
+                    <a href="operator/addbus.php">Activate Bus</a>
+                </li>
+
+                <li>
+                    <a href="operator/plusbus.php">Add Bus</a>
                 </li>
 
                 <li>
@@ -53,9 +72,10 @@
     <!-- /.container -->
 </nav>
 
-<h1><?php session_start();echo $_SESSION['role_id'] ;?></h1>
-
-
+		
 
 </body>
+
 </html>
+
+

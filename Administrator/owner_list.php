@@ -1,7 +1,7 @@
 <?php require_once('inc/connection.php'); ?>
 <?php 
 
-	$query = "SELECT NIC, name, email, address FROM owner";
+	$query = "SELECT * FROM owner_view";		// select from view 
 
 	$result_set = mysqli_query($connection, $query);
 

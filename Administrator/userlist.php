@@ -1,7 +1,7 @@
 <?php require_once('inc/connection.php'); ?>
 <?php 
 
-	$query = "SELECT NIC, name, email, address, occupation FROM customer";
+	$query = "SELECT * FROM customer_view";
 
 	$result_set = mysqli_query($connection, $query);
 

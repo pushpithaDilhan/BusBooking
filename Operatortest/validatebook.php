@@ -4,8 +4,6 @@ Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password)
 */
 
-// role id take it from session
-$role_id = "943340196v";
 
 $link = mysqli_connect("localhost", "root","","busticketing");
 
@@ -20,6 +18,7 @@ $start_station = mysqli_real_escape_string($link, $_POST['start_station']);
 $date = mysqli_real_escape_string($link, $_POST['date']);
 $time = $_POST['time'];
 $seats = $_POST['seats'];
+$role_id = mysqli_real_escape_string($link, $_POST['nic_id']);
 
 
 // attempt search query execution - search for the required bus
@@ -28,16 +27,14 @@ $key = "IFNULL((SELECT seats_available FROM active_busses WHERE route_no='$route
 $result = mysqli_query( $link,$sql) or die('Could not look up user information; ' . mysqli_error($link));
 $row  = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
-$has_bus = true ;
+
 if($row[$key]=='not found'){
     echo '<script type="text/javascript">alert("Unfortunately there is not a bus available for your need."); </script>';
     echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>";
-    $has_bus = false;
 }
 if($row[$key] < $seats){
     echo '<script type="text/javascript">alert("Unfortunately there is not a bus available for your need."); </script>';
     echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>";
-    $has_bus = false;
 }
 else{
     // bus is available and need to extract the bus number
@@ -54,14 +51,10 @@ else{
     $sql_update = "UPDATE active_busses SET seats_available = seats_available - $seats WHERE route_no='$route_name' AND date='$date' AND time='$time' AND seats_available > 0  ;";
     $result4 = mysqli_query( $link,$sql_update) or die('Could not look up user information; ' . mysqli_error($link));
 
-    if($has_bus){
-        echo "<div align='center'><h2>Your booking has been succesfully placed. Your bus number is : </h2></div>";
-        echo "<div align='center'><h1>".$bus_id."</h1></div>" ;
-        echo "<div align='center'><h3> Your NIC number is ".$role_id.". Bring your NIC as a proof of booking.</h3></div>" ;
-    }
-
+    echo "<div align='center'><h2>Your booking has been succesfully placed. Your bus number is : </h2></div>";
+    echo "<div align='center'><h1>".$bus_id."</h1></div>" ;
+    echo "<div align='center'><h3> Your NIC number is ".$role_id.". Bring your NIC as a proof of booking.</h3></div>" ;
 }
-
 
 
 // close connection

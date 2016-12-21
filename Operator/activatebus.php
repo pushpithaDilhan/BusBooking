@@ -1,4 +1,10 @@
 <?php
+// need to add drop box
+
+    session_start();
+
+    $username = $_SESSION['role_id'];
+
 $link = mysql_connect('localhost','root');
 mysql_select_db('busticketing',$link);
 $result = mysql_query('SELECT * FROM route',$link);
@@ -70,14 +76,22 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
 
 
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
-    <form action="validatebook.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+    <form action="activatebusinsert.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+
+        <div class="form-group">
+            <label for="email" class="control-label col-sm-2">Bus Number:</label>
+            <div class="col-sm-10">
+                <input type="text" name="bus_id" class="form-control" id="seats" >
+            </div>
+        </div>
+
         <div class="form-group">
             <label for="Name" class="control-label col-sm-2">Route:</label>
             <div class="col-sm-10">
                 <select name="route_name" class="form-control dropdown-toggle btn btn-default">
                     <option >Select Route</option>
                     <?php while ($row = mysql_fetch_assoc($result)):?>
-                    <option value="<?php echo $row['route_no']?>" ><?php echo $row['route_no'] ." ".$row['first_station']." - ".$row['second_station']?></option>
+                        <option value="<?php echo $row['route_no']?>" ><?php echo $row['route_no'] ." ".$row['first_station']." - ".$row['second_station']?></option>
                     <?php endwhile ?>
                 </select>
             </div>
@@ -124,15 +138,16 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
         </div>
 
         <div class="form-group">
-            <label for="email" class="control-label col-sm-2">Seats needed:</label>
+            <label for="email" class="control-label col-sm-2">Seats:</label>
             <div class="col-sm-10">
                 <input type="number" name="seats" class="form-control" id="seats" >
             </div>
         </div>
 
+
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <input type="submit" value="Reserve" class="btn btn-success">              &nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Activate" class="btn btn-success">              &nbsp;&nbsp;&nbsp;
 
             </div>
         </div>

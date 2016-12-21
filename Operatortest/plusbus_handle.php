@@ -7,7 +7,7 @@ session_start();
 
 	$reg_id = $_POST["bus_id"];
 	$route_id= $_POST["route_id"];
-	$company=$_SESSION["company"];
+	$company=$_SESSION["company"];	// pass from session
 	$bus_condition =$_POST["bus_condition"];
 	$num_of_seats  = date("num_of_seats");
 	

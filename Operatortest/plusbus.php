@@ -20,7 +20,7 @@
 
 </head>
 
-<body style="background-color:#3399ff;" background="../style/images/operator_home.jpg">
+<body style="background-color:#3399ff;">
 
 <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -33,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Home</a>
+                <a class="navbar-brand" href="index.php"><?php echo $username?></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -61,7 +61,7 @@
         <!-- /.container -->
     </nav>
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
-<form action="addbusinsert.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+<form action="plusbus_handle.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
 	<div class="form-group">
     	<label for="bus_id" class="control-label col-sm-2">Bus Number:</label>
         <div class="col-sm-10">
@@ -70,14 +70,14 @@
     </div>
 
     <div class="form-group">
-        <label for="route_id" class="control-label col-sm-2">Route Number:</label>
+        <label for="route_id" class="control-label col-sm-2">Route Number</label>
         <div class="col-sm-10">
         <input type="text" name="route_id" class="form-control" id="route_id" >
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="bus_condition" class="control-label col-sm-2">NIC:</label>
+    	<label for="bus_condition" class="control-label col-sm-2">Route Number</label>
         <div class="col-sm-10">
         <input type="text" name="bus_condition" class="form-control" id="bus_condition" placeholder="Ac / Luxuary /super Luxuary / Normal ">
         </div>

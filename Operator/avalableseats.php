@@ -1,21 +1,23 @@
 <?php require_once('connection.php');
-$username="siripala";
+
 ?>
 
 <?php  
-	$bus_id="'NA-1123'";
-	$query ="SELECT seat_range, bus_id,name,travel_date FROM booking,customer WHERE booking.customer_id = customer.customer_id ";
+
+	$query ="SELECT * FROM bookings ";
 
 	$result_set = mysqli_query($connection,$query);
 	if($result_set){
 		$table = '<table>';
-		$table .='<tr><th>Reserved Seats </th><th>Bus Num </th><th>Customer </th><th>Reservation Date & time</th></tr>';
+		$table .='<tr><th>NIC </th><th>Route </th><th>Date</th><th>Time</th><th>Seats</th><th>Bus Number</th></tr>';
 	while($record = mysqli_fetch_assoc($result_set)){
 		 $table .='<tr>';
-		 $table .='<td>'.$record['seat_range'].'</td>';
-		 $table .='<td>'.$record['bus_id'].'</td>';
-		 $table .='<td>'.$record['name'].'</td>';
-		 $table .='<td>'.$record['travel_date'].'</td>';
+		 $table .='<td>'.$record['role_id'].'</td>';
+		 $table .='<td>'.$record['route_id'].'</td>';
+		 $table .='<td>'.$record['date'].'</td>';
+		 $table .='<td>'.$record['time'].'</td>';
+        $table .='<td>'.$record['seats'].'</td>';
+        $table .='<td>'.$record['bus_id'].'</td>';
 		 $table .='</tr>';
 
 	}
@@ -28,7 +30,7 @@ $username="siripala";
 ?>
 <!DOCTYPE html>
 <html>
-<br></br>
+<br>
 
 <head>
 
@@ -62,7 +64,7 @@ $username="siripala";
     <br>
     </div>
 	</head>
-	<body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<body ><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -72,19 +74,25 @@ $username="siripala";
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><?php echo $username ?></a>
+                <a class="navbar-brand" href="index.php">Home</a>
                 </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="booking.php">Reservation</a>
+                    </li>
+                    <li class = "active">
+                        <a href="avalableseats.php">Booking List</a>
+                    </li>
+                    <li >
+                        <a href="busdetails.php">Bus Details</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="addbus.php">Add a Bus</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="activatebus.php">Activate Bus</a>
                     </li>
                 </ul>
             </div>

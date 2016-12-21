@@ -71,6 +71,14 @@ $result_locations = mysql_query('SELECT first_station FROM route UNION SELECT se
 
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
     <form action="validatebook.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+
+        <div class="form-group">
+            <label for="email" class="control-label col-sm-2">NIC No:</label>
+            <div class="col-sm-10">
+                <input type="text" name="nic_id" class="form-control" id="seats" >
+            </div>
+        </div>
+
         <div class="form-group">
             <label for="Name" class="control-label col-sm-2">Route:</label>
             <div class="col-sm-10">

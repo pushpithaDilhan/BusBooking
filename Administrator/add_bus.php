@@ -81,7 +81,7 @@
     <div class="col-sm-offset-2 col-sm-10">
     <input type="submit" value="Submit" class="btn btn-success" onclick= "parent.location=('insert_bus_info.php')">
      &nbsp;&nbsp;&nbsp;
-    <a href="add_bus.php"><button type="button" class="btn btn-danger">Cancel</button></a>
+    <a href="busses.php"><button type="button" class="btn btn-danger">Cancel</button></a>
     </div>
     </div>
     

@@ -1,8 +1,25 @@
+<?php
+
+// pass from session
+$bus_id="WPNA-8201";
+$route_no = "383/2";
+
+$link = mysqli_connect("localhost", "root","","busticketing");
+$sql = "SELECT * FROM route WHERE route_no='$route_no'";
+$result = mysqli_query( $link,$sql) or die('Could not look up user information; ' . mysqli_error($link));
+$row  = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+//pass from session
+$start_location = $row['first_station'];
+$end_location = $row['second_station'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Add bus route</title>
+<title>Register</title>
 
 <!-- bootstrap -->
 <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
@@ -23,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../common/routelist.php">Search Routes</a>
+            <a class="navbar-brand" href="../common/routelist.php">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,15 +55,6 @@
                     <a href="#">Contact</a>
                 </li>
 
-                <li>
-                    <a href="../Administrator/adminhomepage.php" >Admin test</a>
-                </li>
-
-                <li>
-                    <a href="../Register/add-record-form.php" style="text-align:right;position:fixed;">SignUp</a>
-                </li>
-
-
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -55,41 +63,47 @@
 </nav>
 
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
-<form action="insert_bus_route_info.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
+<form action="addbusinsert.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
 	<div class="form-group">
-    	<label for="route_number" class="control-label col-sm-2">Route number:</label>
+    	<label for="bus_id" class="control-label col-sm-2">Bus Number:</label>
         <div class="col-sm-10">
-        <input type="text" name="route_no" class="form-control" id="route_no" placeholder="Enter bus registration number">
+        <input type="text" name="bus_id" class="form-control" id="bus_id" value="<?php echo $bus_id ?>">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="num_of_seats" class="control-label col-sm-2">Date:</label>
+        <div class="col-sm-10">
+            <input type="text" name="date" class="form-control" id="date" value="<?php echo date('Y/m/d')?>">
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="first_station" class="control-label col-sm-2">First station:</label>
+        <label for="nic" class="control-label col-sm-2">Time:</label>
         <div class="col-sm-10">
-        <input type="text" name="first_station" class="form-control" id="first_station" placeholder="Enter first station">
+            <select name="time" class="form-control">
+                <option value="8.00 AM">8.00 AM</option>
+                <option value="9.00 AM">9.00 AM</option>
+                <option value="10.00 AM">10.00 AM</option>
+                <option value="11.00 AM">11.00 AM</option>
+            </select>
         </div>
     </div>
 
     <div class="form-group">
-        <label for="second_station" class="control-label col-sm-2">Second station:</label>
+        <label for="num_of_seats" class="control-label col-sm-2">Seats:</label>
         <div class="col-sm-10">
-        <input type="text" name="second_station" class="form-control" id="second_station" placeholder="Enter second station">
+            <input type="number" name="seats" class="form-control" id="seats">
         </div>
     </div>
 
-    <div class="form-group">
-    	<label for="price" class="control-label col-sm-2">Price:</label>
-        <div class="col-sm-10">
-        <input type="text" name="price" class="form-control" id="price" placeholder="Enter price of the journey">
-        </div>
-    </div>
 
     <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-    <input type="submit" value="Submit" class="btn btn-success">
-     &nbsp;&nbsp;&nbsp;
-    <a href="busroutes.php"><button type="button" class="btn btn-danger">Cancel</button></a>
-    </div>
+        <div class="col-sm-offset-2 col-sm-10">
+            <input type="submit" value="Activate" class="btn btn-success">              &nbsp;&nbsp;&nbsp;
+
+        </div>
     </div>
     
 </form>

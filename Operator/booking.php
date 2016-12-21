@@ -1,6 +1,17 @@
 <?php
-	$username = "Siripala"
+	session_start();//parse username here
+	$username = $_SESSION['username'];
+
+$link = mysql_connect('localhost','root');
+mysql_select_db('busticketing',$link);
+//testing on my database
+//$result = mysql_query('SELECT * FROM route',$link);
+//$result_locations = mysql_query('SELECT start FROM booking',$link);
+
+$result = mysql_query('SELECT * FROM route',$link);
+$result_locations = mysql_query('SELECT first_station FROM route UNION SELECT second_station FROM route',$link);
 ?>
+
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
@@ -14,13 +25,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,12 +33,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <div class="container">
-    <h2>Booked seats with customer names!</h2>
-    <br>
-    </div>
+   
 	</head>
-	<body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<body style="background-color:#3399ff;" background="../style/images/operator_home.jpg"><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -43,19 +45,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><?php echo $username ?></a>
+                <a class="navbar-brand" href="index.php">Home</a>
                 </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
+                    <li class="active">
+                        <a href="#">Reservation</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="avalableseats.php">Booking List</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="busdetails.php">Bus Details</a>
+                    </li>
+                    <li >
+                        <a href="addbus.php">Activate bus</a>
+                    </li>
+                    <li>
+                        <a href="addbus.php">Activate bus</a>
                     </li>
                 </ul>
             </div>
@@ -64,95 +72,109 @@
         <!-- /.container -->
     </nav>
 	<!-- jQuery Version 1.11.1 -->
+    <!-- Custom CSS -->
+    <style>
+    body {
+        /*padding-top: 70px;
+       Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        
+    }
+    </style>
 
 
+<div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
+    <form action="validatebooking.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
 
 
+        <div class="form-group">
+            <label for="address" class="control-label col-sm-2">Customer NIC:</label>
+            <div class="col-sm-10">
+                <input type="text" name="customer_id"  class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Name" class="control-label col-sm-2">Route:</label>
+            <div class="col-sm-10">
+                <select name="route_name" class="form-control dropdown-toggle btn btn-default">
+                    <?php while ($row = mysql_fetch_assoc($result)):?>
+                    <option value="<?php echo $row['route_no'] ?>"><?php echo $row['route_no'] ." ".$row['first_station']." - ".$row['second_station']?></option>
+                    <?php endwhile ?>
+                </select>
+            </div>
+        </div>
 
+        <div class="form-group">
+            <label for="Name" class="control-label col-sm-2">Start:</label>
+            <div class="col-sm-10">
+                <select name="start_station" class="form-control dropdown-toggle btn btn-default">
+                    <?php while ($row = mysql_fetch_assoc($result_locations)):?>
+                        <option value="<?php echo $row['first_station'] ?>"><?php echo $row['first_station'] ?></option>
+                    <?php endwhile ?>
+                </select>
+            </div>
+        </div>
 
-    <script src="js/jquery.js"></script>
+        <div class="form-group">
+            <label for="address" class="control-label col-sm-2">Date:</label>
+            <div class="col-sm-10">
+                <input type="text" name="book_date" value="2016/12/21" class="form-control" />
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $('input[name="birthdate"]').daterangepicker({
+                        singleDatePicker: true,
+                        showDropdowns: true
+                    },
+                    function(start, end, label) {
+                    });
+            });
+        </script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    	
+        <div class="form-group">
+            <label for="nic" class="control-label col-sm-2">Time:</label>
+            <div class="col-sm-10">
+                <select name="time" class="form-control">
+                    <option value="8.00 AM">8.00 AM</option>
+                    <option value="9.00 AM">9.00 AM</option>
+                    <option value="10.00 AM">10.00 AM</option>
+                    <option value="11.00 AM">11.00 AM</option>
+                </select>
+            </div>
+        </div>
 
-    	<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+        <div class="form-group">
+            <label for="email" class="control-label col-sm-2">Seats needed:</label>
+            <div class="col-sm-10">
+                <input type="number" name="seats" class="form-control" id="email" >
+            </div>
+        </div>
 
-<!-- Inline CSS based on choices in "Settings" tab -->
-<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="Reserve" class="btn btn-success">              &nbsp;&nbsp;&nbsp;
 
-<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
-<div class="bootstrap-iso">
- <div class="container">
-  <div class="row">
-   <div class="col-md-6 col-sm-6 col-xs-12">
-    <form action="validatebooking.php" method="post">
-     <div class="form-group ">
-      <label class="control-label requiredField" for="name">
-       Customer NIC
-       <span class="asteriskField">
-        *
-       </span>
-      </label>
-      <input class="form-control" id="name" name="customer_id" type="text"/>
-     </div>
-     <div class="form-group ">
-      <label class="control-label requiredField" for="name1">
-       Name
-       <span class="asteriskField">
-        *
-       </span>
-      </label>
-      <input class="form-control" id="name1" name="name" type="text"/>
-     </div>
-     <div class="form-group ">
-      <label class="control-label requiredField" for="name2">
-       Bus Reg No
-       <span class="asteriskField">
-        *
-       </span>
-      </label>
-      <input class="form-control" id="name2" name="bus_id" type="text"/>
-     </div>
-     <div class="form-group ">
-      <label class="control-label requiredField" for="number">
-       Number of seats to be booked
-       <span class="asteriskField">
-        *
-       </span>
-      </label>
-      <input class="form-control" id="number" name="seat_count" type="text"/>
-     </div>
-     <div class="form-group ">
-      <label class="control-label " for="name3">
-       Start
-      </label>
-      <input class="form-control" id="name3" name="start" type="text"/>
-     </div>
-     <div class="form-group ">
-      <label class="control-label " for="name4">
-       End
-      </label>
-      <input class="form-control" id="name4" name="ending" type="text"/>
-     </div>
-     <div class="form-group">
-      <div>
-       <button class="btn btn-primary " name="submit" type="submit">
-        Submit
-       </button>
-      </div>
-     </div>
+            </div>
+        </div>
+
     </form>
-   </div>
-  </div>
- </div>
 </div>
 
 
 
+   
+    
+
+
 		
+
+
+
+
+     <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 
 </body>

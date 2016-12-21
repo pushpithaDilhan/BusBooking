@@ -1,7 +1,7 @@
 <?php require_once('inc/connection.php'); ?>
 <?php 
 
-	$query = "SELECT NIC, name, email, address FROM admin";
+	$query = "SELECT * FROM admin_view";
 
 	$result_set = mysqli_query($connection, $query);
 
@@ -39,7 +39,7 @@
 	</header>
 
 	<?php echo "$table"; ?>
-	
+	<p><input type="submit" value="Add" name="add_admin" onclick= "parent.location=('add_admin.php')"></p>
 	
 </body>
 </html>

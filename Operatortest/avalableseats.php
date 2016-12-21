@@ -1,38 +1,20 @@
-
 <?php
-//I need username parsing in session! -replace the indicated line after parsing the session
+// pass from session
+$bus_id="WPNA-8201";
+$route_no = "383/2";
 
-	session_start();
-	//$username = $_SESSION['username'];
-	$username = "Sankaja";
-	$_SESSION['username'] = $username;
+$link = mysqli_connect("localhost", "root","","busticketing");
+$sql = "SELECT * FROM bookings WHERE bus_id= '$bus_id' ";
+$result = mysqli_query( $link,$sql) or die('Could not look up user information; ' . mysqli_error($link));
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-    <!--icon for browser table-->
-    <link rel="title icon" type="image/x-icon" href="../style/images/favicon.ico" />
-    <!-- Bootstrap -->
-    <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
-    <title>Online Bus Ticketing</title>
-         
-        
-        <link rel="stylesheet" href="../style/css/styles.css">
-    
-
-
-
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Booking list</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,6 +25,9 @@
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+
+    table{border-collapse: collapse;}
+    td,th{border: 1px solid black; padding: 10px;}
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,13 +35,22 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
+    <div class="container">
 
-</head>
+	<!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
 
-<body background="style/images/background.jpg" style="background-size: cover">
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Navigation -->
+<body>
+
+<h2>Booked seats</h2>
+
+<div class="container">
+
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -72,21 +66,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    
                     <li>
-                        <a href="operator/booking.php">Reservation</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="operator/avalableseats.php">Booking List</a>
+                        <a href="#">Services</a>
                     </li>
                     <li>
-                        <a href="operator/busdetails.php">Bus Details</a>
-                    </li>
-                    <li>
-                        <a href="operator/addbus.php">Add a Bus</a>
-                    </li>
-                    <li >
-                        <a href="operator/activatebus.php">Activate bus</a>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -94,20 +81,34 @@
         </div>
         <!-- /.container -->
     </nav>
+    </div>
 
-    <body>
+<table class = "table table-hover">
 
-	</body>
+    <thead>
+    <tr>
+        <th>NIC Number</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Seats</th>
+    </tr>
+    </thead>
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
+    <tbody>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <?php while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)):?>
+    <tr>
+        <td><?php echo $row['role_id'] ?></td>
+        <td><?php echo $row['date'] ?></td>
+        <td><?php echo $row['time'] ?></td>
+        <td><?php echo $row['seats'] ?></td>
+    </tr>
+    <?php endwhile ?>
+
+    </tbody>
+
+</table>
 
 
 </body>
-
 </html>
-
-
