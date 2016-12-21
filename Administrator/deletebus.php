@@ -3,7 +3,7 @@
 	$id = $_GET['id'];
 	$link = mysqli_connect('localhost', 'root', '', 'busticketing') or die('Connection error!');	 
 
-	$query = "DELETE FROM bus WHERE registration_no = '$id'";
+	$query = "DELETE FROM bus WHERE reg_id = '$id'";
 
 	if(mysqli_query($link, $query)){
     readfile('regsuccess.html');

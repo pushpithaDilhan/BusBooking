@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../common/routelist.php">Search Routes</a>
+            <a class="navbar-brand" href="adminhomepage.php">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,13 +38,7 @@
                     <a href="#">Contact</a>
                 </li>
 
-                <li>
-                    <a href="../Administrator/adminhomepage.php" >Admin test</a>
-                </li>
 
-                <li>
-                    <a href="../Register/add-record-form.php" style="text-align:right;position:fixed;">SignUp</a>
-                </li>
 
 
             </ul>

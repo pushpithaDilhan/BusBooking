@@ -2,10 +2,7 @@
 <?php
 //I need username parsing in session! -replace the indicated line after parsing the session
 
-	session_start();
-	//$username = $_SESSION['username'];
-	$username = "Sankaja";
-	$_SESSION['username'] = $username;
+
 ?>
 
 <!DOCTYPE html>
@@ -87,6 +84,10 @@
                     </li>
                     <li >
                         <a href="operator/activatebus.php">Activate bus</a>
+                    </li>
+
+                    <li style="top: 0 ;right: 0; position: absolute" >
+                        <a href="index.html">Sign Out</a>
                     </li>
                 </ul>
             </div>

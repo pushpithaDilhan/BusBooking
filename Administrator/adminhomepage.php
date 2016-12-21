@@ -43,7 +43,11 @@
                 </li>
 
                 <li>
-                    <a href="index.html" style="text-align:right;">Log Out</a>
+                    <a href="administrator/admin_new_password.php" >Change Password</a>
+                </li>
+
+                <li style="position:absolute; top: 0;right: 0">
+                    <a href="../index.html" style="text-align:right;">Sign Out</a>
                 </li>
 
 

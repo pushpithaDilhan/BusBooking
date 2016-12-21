@@ -3,9 +3,8 @@
 //$link = mysql_connect('localhost','root');
 //mysql_select_db('userdb',$link);
 //$result = mysql_query('SELECT * FROM route',$link);
-    session_start();
 
-    $username = $_SESSION['username'];
+
 ?>
 
 <!DOCTYPE html>
@@ -62,31 +61,31 @@
     </nav>
 <div class="container jumbotron" style="width:50%;margin-top:50px;border-radius:10px;">
 <form action="addbusinsert.php" method="post" class="form-horizontal" style="margin-right:10px;width:95%;">
-	<div class="form-group">
-    	<label for="bus_id" class="control-label col-sm-2">Bus Number:</label>
+    <div class="form-group">
+        <label for="bus_id" class="control-label col-sm-2">Bus Number:</label>
         <div class="col-sm-10">
-        <input type="text" name="bus_id" class="form-control" id="bus_id" placeholder="Enter bus number">
+            <input type="text" name="bus_id" class="form-control" id="bus_id" placeholder="Enter bus number">
         </div>
     </div>
 
     <div class="form-group">
-        <label for="route_id" class="control-label col-sm-2">Route Number:</label>
+        <label for="route_id" class="control-label col-sm-2">Route Number</label>
         <div class="col-sm-10">
-        <input type="text" name="route_id" class="form-control" id="route_id" >
+            <input type="text" name="route_id" class="form-control" id="route_id" >
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="bus_condition" class="control-label col-sm-2">NIC:</label>
+        <label for="bus_condition" class="control-label col-sm-2">Bus Condition</label>
         <div class="col-sm-10">
-        <input type="text" name="bus_condition" class="form-control" id="bus_condition" placeholder="Ac / Luxuary /super Luxuary / Normal ">
+            <input type="text" name="bus_condition" class="form-control" id="bus_condition" placeholder="Ac / Luxuary /super Luxuary / Normal ">
         </div>
     </div>
 
     <div class="form-group">
-    	<label for="num_of_seats" class="control-label col-sm-2">Number of seats:</label>
+        <label for="num_of_seats" class="control-label col-sm-2">Number of seats:</label>
         <div class="col-sm-10">
-        <input type="text" name="num_of_seats" class="form-control" id="num_of_seats" placeholder="Enter your occupation">
+            <input type="text" name="num_of_seats" class="form-control" id="num_of_seats" placeholder="Enter your occupation">
         </div>
     </div>
 

@@ -18,16 +18,16 @@ if($link === false){
 
 
 // for testing - operator
-$username = md5("raaja");
-$password = md5("raaja123");
+//$username = md5("raaja");
+//$password = md5("raaja123");
 
 // for testing - admin
 //$username = md5("admin");
 //$password = md5("admin123");
 
 // Escape user inputs for security
-//$username = md5(mysqli_real_escape_string($link, $_POST['username']));
-//$password = md5(mysqli_real_escape_string($link, $_POST['password']));
+$username = md5(mysqli_real_escape_string($link, $_POST['username']));
+$password = md5(mysqli_real_escape_string($link, $_POST['password']));
 
 
 
@@ -38,6 +38,8 @@ $sql = "SELECT IFNULL((SELECT role FROM login WHERE username='$username' AND pas
 $result = mysqli_query( $link,$sql) or die('Could not look up user information; ' . mysqli_error($link));
 
 $row  = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+
 
 $key = "IFNULL((SELECT role FROM login WHERE username='$username' AND password= '$password'),'not found')";
 

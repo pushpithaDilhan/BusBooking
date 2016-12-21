@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a6882c37-cd2c-4dd0-9145-ee72312a098f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Customer/bookbus.php" afterPath="$PROJECT_DIR$/Customer/bookbus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Customer/validatebook.php" afterPath="$PROJECT_DIR$/Customer/validatebook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Operator/validatebooking.php" afterPath="$PROJECT_DIR$/Operator/validatebooking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Administrator/add_bus_route.php" afterPath="$PROJECT_DIR$/Administrator/add_bus_route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Administrator/adminhomepage.php" afterPath="$PROJECT_DIR$/Administrator/adminhomepage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Administrator/deletebus.php" afterPath="$PROJECT_DIR$/Administrator/deletebus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Operator/activatebusinsert.php" afterPath="$PROJECT_DIR$/Operator/activatebusinsert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Operator/addbus.php" afterPath="$PROJECT_DIR$/Operator/addbus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Operator/addbusinsert.php" afterPath="$PROJECT_DIR$/Operator/addbusinsert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Operator/index.php" afterPath="$PROJECT_DIR$/Operator/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
     </list>
     <ignored path="BusBooking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,79 +31,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customerhomepage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Customer/customerhomepage.php">
+      <file leaf-file-name="addbus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Operator/addbus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookings.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Customer/bookings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+            <state relative-caret-position="240">
+              <caret line="78" column="79" selection-start-line="78" selection-start-column="79" selection-end-line="78" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validatebook.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Customer/validatebook.php">
+      <file leaf-file-name="add_bus_route.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Administrator/add_bus_route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#134#0#PHP" expanded="true" />
-                <marker date="1482148803507" expanded="true" signature="843:1008" ph="SELECT IFNUL... " />
-                <marker date="1482148803507" expanded="true" signature="858:905" ph="SELECT seats... active_busses" />
-                <marker date="1482148803507" expanded="true" signature="858:960" ph="SELECT seats... active_busses" />
-                <marker date="1482148803507" expanded="true" signature="1019:1177" ph="SELECT IFNUL... " />
-                <marker date="1482148803507" expanded="true" signature="1840:1966" ph="SELECT bus_i... active_busses" />
-                <marker date="1482148803507" expanded="true" signature="2188:2330" ph="INSERT INTO bookings... " />
-                <marker date="1482148803507" expanded="true" signature="2188:2339" ph="INSERT INTO bookings... " />
-                <marker date="1482148803507" expanded="true" signature="2516:2576" ph="UPDATE table... " />
-                <marker date="1482148803507" expanded="true" signature="2516:2583" ph="UPDATE table... " />
-                <marker date="1482148803507" expanded="true" signature="2516:2589" ph="UPDATE table... " />
-                <marker date="1482148803507" expanded="true" signature="2516:2670" ph="UPDATE table... " />
-                <marker date="1482148803507" expanded="true" signature="2516:2673" ph="UPDATE table... " />
-                <marker date="1482148803507" expanded="true" signature="3211:3263" ph="SELECT role_... login" />
-              </folding>
+            <state relative-caret-position="92">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
+      <file leaf-file-name="adminhomepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Administrator/adminhomepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="357">
+              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
               <folding>
-                <marker date="1482065466935" expanded="true" signature="529:633" ph="SELECT IFNUL... " />
-                <marker date="1482065466935" expanded="true" signature="544:607" ph="SELECT role login" />
-                <marker date="1482065466935" expanded="true" signature="544:619" ph="SELECT role login" />
-                <marker date="1482065466935" expanded="true" signature="803:900" ph="SELECT IFNUL... " />
-                <marker date="1482065466935" expanded="true" signature="811:886" ph="SELECT role login" />
-                <marker date="1482065466935" expanded="true" signature="913:965" ph="SELECT role_... login" />
-                <marker date="1482065466935" expanded="true" signature="913:966" ph="SELECT IFNUL... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Register/insert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="88" />
-              <folding>
-                <marker date="1482063982418" expanded="true" signature="1036:1210" ph="INSERT INTO customer... " />
-                <marker date="1482063982418" expanded="true" signature="1232:1341" ph="INSERT INTO login... " />
+                <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,31 +66,101 @@
       <file leaf-file-name="bookbus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Customer/bookbus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+            <state relative-caret-position="136">
+              <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
               <folding>
-                <marker date="1482148924320" expanded="true" signature="111:130" ph="SELECT * FRO... route" />
-                <marker date="1482148924320" expanded="true" signature="173:204" ph="SELECT first... route" />
-                <marker date="1482148924320" expanded="true" signature="173:243" ph="SELECT first... " />
-                <marker date="1482148924320" expanded="true" signature="211:243" ph="SELECT secon... route" />
+                <marker date="1482170412312" expanded="true" signature="111:130" ph="SELECT * FRO... route" />
+                <marker date="1482170412312" expanded="true" signature="173:204" ph="SELECT first... route" />
+                <marker date="1482170412312" expanded="true" signature="173:243" ph="SELECT first... " />
+                <marker date="1482170412312" expanded="true" signature="211:243" ph="SELECT secon... route" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleterow.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Administrator/deleterow.php">
+      <file leaf-file-name="validatebook.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Customer/validatebook.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+              <folding>
+                <marker date="1482214974136" expanded="true" signature="695:860" ph="SELECT IFNUL... " />
+                <marker date="1482214974136" expanded="true" signature="1753:1879" ph="SELECT bus_i... active_busses" />
+                <marker date="1482214974136" expanded="true" signature="2101:2251" ph="INSERT INTO bookings... " />
+                <marker date="1482214974136" expanded="true" signature="2428:2582" ph="UPDATE activ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_new_password.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Administrator/admin_new_password.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bookings.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Customer/bookings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
               <folding>
-                <marker date="1482123993530" expanded="true" signature="136:172" ph="DELETE FROM " />
+                <marker date="1482291305355" expanded="true" signature="124:171" ph="SELECT * FRO... bookings" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activatebusinsert.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Operator/activatebusinsert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+              <folding>
+                <element signature="e#6#134#0#PHP" expanded="true" />
+                <marker date="1482293342543" expanded="true" signature="691:864" ph="INSERT INTO bookings... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activatebus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Operator/activatebus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1370">
+              <caret line="149" column="52" selection-start-line="149" selection-start-column="52" selection-end-line="149" selection-end-column="52" />
+              <folding>
+                <marker date="1482274080099" expanded="true" signature="197:216" ph="SELECT * FRO... route" />
+                <marker date="1482274080099" expanded="true" signature="259:290" ph="SELECT first... route" />
+                <marker date="1482274080099" expanded="true" signature="259:329" ph="SELECT first... " />
+                <marker date="1482274080099" expanded="true" signature="297:329" ph="SELECT secon... route" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customerhomepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Customer/customerhomepage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="74" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,26 +169,49 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Register/add-record-form.php" />
-        <option value="$PROJECT_DIR$/Administrator/adminhomepage.php" />
         <option value="$PROJECT_DIR$/customerhomepage.html" />
         <option value="$PROJECT_DIR$/Customer/customerhomepage.html" />
         <option value="$PROJECT_DIR$/Register/owner_reg_form.php" />
         <option value="$PROJECT_DIR$/Register/insert_owner.php" />
         <option value="$PROJECT_DIR$/Register/insert.php" />
         <option value="$PROJECT_DIR$/Operator/operatorhome.html" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/Operator/operatorhome.php" />
-        <option value="$PROJECT_DIR$/Customer/bookings.php" />
         <option value="$PROJECT_DIR$/Common/menu.css" />
         <option value="$PROJECT_DIR$/Common/menu.js" />
         <option value="$PROJECT_DIR$/Common/routeTest.php" />
         <option value="$PROJECT_DIR$/Common/new.html" />
         <option value="$PROJECT_DIR$/Common/new.php" />
+        <option value="$PROJECT_DIR$/Administrator/deleterow.php" />
+        <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/services.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Customer/customerhomepage.php" />
-        <option value="$PROJECT_DIR$/Operator/validatebooking.php" />
-        <option value="$PROJECT_DIR$/Customer/validatebook.php" />
         <option value="$PROJECT_DIR$/Customer/bookbus.php" />
+        <option value="$PROJECT_DIR$/Operator/bookbus.php" />
+        <option value="$PROJECT_DIR$/Operator/validatebook.php" />
+        <option value="$PROJECT_DIR$/Customer/customerhomepage.php" />
+        <option value="$PROJECT_DIR$/Administrator/admin_list.php" />
+        <option value="$PROJECT_DIR$/Customer/validatebook.php" />
+        <option value="$PROJECT_DIR$/Administrator/busroutes.php" />
+        <option value="$PROJECT_DIR$/Operator/plusbus.php" />
+        <option value="$PROJECT_DIR$/Operator/busdetails.php" />
+        <option value="$PROJECT_DIR$/Operatortest/addbus.php" />
+        <option value="$PROJECT_DIR$/Administrator/busses.php" />
+        <option value="$PROJECT_DIR$/Operator/connection.php" />
+        <option value="$PROJECT_DIR$/Operator/activatebus.php" />
+        <option value="$PROJECT_DIR$/Operatortest/index.php" />
+        <option value="$PROJECT_DIR$/Operator/booking.php" />
+        <option value="$PROJECT_DIR$/Operator/validatebooking.php" />
+        <option value="$PROJECT_DIR$/Operator/avalableseats.php" />
+        <option value="$PROJECT_DIR$/Operator/addbusinsert.php" />
+        <option value="$PROJECT_DIR$/Administrator/deletebus.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/Operator/index.php" />
+        <option value="$PROJECT_DIR$/Administrator/add_bus_route.php" />
+        <option value="$PROJECT_DIR$/Customer/bookings.php" />
+        <option value="$PROJECT_DIR$/Operator/activatebusinsert.php" />
+        <option value="$PROJECT_DIR$/Operator/addbus.php" />
+        <option value="$PROJECT_DIR$/Administrator/adminhomepage.php" />
       </list>
     </option>
   </component>
@@ -173,7 +225,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1040" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -201,6 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -278,13 +331,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\BusBooking\Operator" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -346,20 +404,22 @@
       <updated>1482039697673</updated>
       <workItem from="1482039703723" duration="7315000" />
       <workItem from="1482050928741" duration="19140000" />
-      <workItem from="1482113377155" duration="17476000" />
+      <workItem from="1482113377155" duration="48453000" />
+      <workItem from="1482250079568" duration="13254000" />
+      <workItem from="1482282036622" duration="5698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43931000" />
+    <option name="totallyTimeSpent" value="93860000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1785174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24693878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -392,179 +452,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/routelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/routelist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <marker date="1481848239164" expanded="true" signature="118:159" ph="SELECT route... routelist" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/new.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <marker date="1482081914041" expanded="true" signature="111:130" ph="SELECT * FRO... route" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <marker date="1482065466935" expanded="true" signature="529:633" ph="SELECT IFNUL... " />
-            <marker date="1482065466935" expanded="true" signature="544:607" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="544:619" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="803:900" ph="SELECT IFNUL... " />
-            <marker date="1482065466935" expanded="true" signature="811:886" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="913:965" ph="SELECT role_... login" />
-            <marker date="1482065466935" expanded="true" signature="913:966" ph="SELECT IFNUL... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1482065466935" expanded="true" signature="529:633" ph="SELECT IFNUL... " />
-            <marker date="1482065466935" expanded="true" signature="544:607" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="544:619" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="803:900" ph="SELECT IFNUL... " />
-            <marker date="1482065466935" expanded="true" signature="811:886" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="913:965" ph="SELECT role_... login" />
-            <marker date="1482065466935" expanded="true" signature="913:966" ph="SELECT IFNUL... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Customer/customerhomepage.html" />
-    <entry file="file://$PROJECT_DIR$/Register/add-record-form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Administrator/adminhomepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="83" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Administrator/busses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Administrator/busses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register/add-record-form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Administrator/busroutes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Administrator/adminhomepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customerhomepage.html" />
-    <entry file="file://$PROJECT_DIR$/Customer/customerhomepage.html" />
-    <entry file="file://$PROJECT_DIR$/Operator/operatorhome.html" />
-    <entry file="file://$PROJECT_DIR$/Operator/operatorhome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/menu.css" />
-    <entry file="file://$PROJECT_DIR$/Common/menu.js" />
-    <entry file="file://$PROJECT_DIR$/Common/routelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/routes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/new.html" />
     <entry file="file://$PROJECT_DIR$/Common/routeTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,151 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <marker date="1481848239164" expanded="true" signature="118:159" ph="SELECT route... routelist" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register/insert_owner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <marker date="1482063965525" expanded="true" signature="966:1109" ph="INSERT INTO owner... " />
-            <marker date="1482063965525" expanded="true" signature="1131:1240" ph="INSERT INTO login... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register/owner_reg_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="65" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Customer/bookings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Customer/customerhomepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/new.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <marker date="1482081914041" expanded="true" signature="111:130" ph="SELECT * FRO... route" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Operator/avalableseats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1482052284744" expanded="true" signature="104:217" ph="SELECT seat_... booking" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Operator/validatebooking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1482124140333" expanded="true" signature="286:448" ph="INSERT INTO booking... " />
-            <marker date="1482124140333" expanded="true" signature="464:538" ph="INSERT INTO customer... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding>
-            <marker date="1482065466935" expanded="true" signature="529:633" ph="SELECT IFNUL... " />
-            <marker date="1482065466935" expanded="true" signature="544:607" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="544:619" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="803:900" ph="SELECT IFNUL... " />
-            <marker date="1482065466935" expanded="true" signature="811:886" ph="SELECT role login" />
-            <marker date="1482065466935" expanded="true" signature="913:965" ph="SELECT role_... login" />
-            <marker date="1482065466935" expanded="true" signature="913:966" ph="SELECT IFNUL... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="88" />
-          <folding>
-            <marker date="1482063982418" expanded="true" signature="1036:1210" ph="INSERT INTO customer... " />
-            <marker date="1482063982418" expanded="true" signature="1232:1341" ph="INSERT INTO login... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Customer/validatebook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#134#0#PHP" expanded="true" />
-            <marker date="1482148803507" expanded="true" signature="843:1008" ph="SELECT IFNUL... " />
-            <marker date="1482148803507" expanded="true" signature="858:905" ph="SELECT seats... active_busses" />
-            <marker date="1482148803507" expanded="true" signature="858:960" ph="SELECT seats... active_busses" />
-            <marker date="1482148803507" expanded="true" signature="1019:1177" ph="SELECT IFNUL... " />
-            <marker date="1482148803507" expanded="true" signature="1840:1966" ph="SELECT bus_i... active_busses" />
-            <marker date="1482148803507" expanded="true" signature="2188:2330" ph="INSERT INTO bookings... " />
-            <marker date="1482148803507" expanded="true" signature="2188:2339" ph="INSERT INTO bookings... " />
-            <marker date="1482148803507" expanded="true" signature="2516:2576" ph="UPDATE table... " />
-            <marker date="1482148803507" expanded="true" signature="2516:2583" ph="UPDATE table... " />
-            <marker date="1482148803507" expanded="true" signature="2516:2589" ph="UPDATE table... " />
-            <marker date="1482148803507" expanded="true" signature="2516:2670" ph="UPDATE table... " />
-            <marker date="1482148803507" expanded="true" signature="2516:2673" ph="UPDATE table... " />
-            <marker date="1482148803507" expanded="true" signature="3211:3263" ph="SELECT role_... login" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Customer/bookbus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding>
-            <marker date="1482148924320" expanded="true" signature="111:130" ph="SELECT * FRO... route" />
-            <marker date="1482148924320" expanded="true" signature="173:204" ph="SELECT first... route" />
-            <marker date="1482148924320" expanded="true" signature="173:243" ph="SELECT first... " />
-            <marker date="1482148924320" expanded="true" signature="211:243" ph="SELECT secon... route" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,7 +471,440 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1482123993530" expanded="true" signature="136:172" ph="DELETE FROM " />
+            <marker date="1482125338000" expanded="true" signature="136:176" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="94" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/bookbus.php" />
+    <entry file="file://$PROJECT_DIR$/Operator/validatebook.php" />
+    <entry file="file://$PROJECT_DIR$/Administrator/admin_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1482249046000" expanded="true" signature="64:88" ph="SELECT NIC, admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/busroutes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1482124056000" expanded="true" signature="64:83" ph="SELECT * FRO... route" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/plusbus_handle.php" />
+    <entry file="file://$PROJECT_DIR$/Operator/plusbus.php" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/operatorhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/Insert_admin_new_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1482224432000" expanded="true" signature="734:802" ph="UPDATE admin... " />
+            <marker date="1482224432000" expanded="true" signature="823:891" ph="UPDATE login... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/avalableseats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <marker date="1482178675580" expanded="true" signature="141:187" ph="SELECT * FRO... bookings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/busdetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <marker date="1482228534033" expanded="true" signature="84:101" ph="SELECT * FRO... bus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/addbusinsert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/busses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="137" selection-start-line="17" selection-start-column="137" selection-end-line="17" selection-end-column="137" />
+          <folding>
+            <marker date="1482252630663" expanded="true" signature="64:81" ph="SELECT * FRO... bus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/plusbus_handle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1482218119494" expanded="true" signature="279:443" ph="INSERT INTO bus... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/validatebooking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1482124140333" expanded="true" signature="286:448" ph="INSERT INTO booking... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/validatebook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-406">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <marker date="1482175531756" expanded="true" signature="701:866" ph="SELECT IFNUL... " />
+            <marker date="1482175531756" expanded="true" signature="1698:1824" ph="SELECT bus_i... active_busses" />
+            <marker date="1482175531756" expanded="true" signature="2046:2196" ph="INSERT INTO bookings... " />
+            <marker date="1482175531756" expanded="true" signature="2373:2527" ph="UPDATE activ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/bookbus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="79" selection-end-column="14" />
+          <folding>
+            <marker date="1482175417777" expanded="true" signature="111:130" ph="SELECT * FRO... route" />
+            <marker date="1482175417777" expanded="true" signature="173:204" ph="SELECT first... route" />
+            <marker date="1482175417777" expanded="true" signature="173:243" ph="SELECT first... " />
+            <marker date="1482175417777" expanded="true" signature="211:243" ph="SELECT secon... route" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="110" column="74" selection-start-line="110" selection-start-column="74" selection-end-line="110" selection-end-column="74" />
+          <folding>
+            <marker date="1482278146194" expanded="true" signature="337:356" ph="SELECT * FRO... route" />
+            <marker date="1482278146194" expanded="true" signature="399:430" ph="SELECT first... route" />
+            <marker date="1482278146194" expanded="true" signature="399:469" ph="SELECT first... " />
+            <marker date="1482278146194" expanded="true" signature="437:469" ph="SELECT secon... route" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/addbus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operatortest/plusbus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="90" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/add_bus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/avalableseats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="104" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
+          <folding>
+            <marker date="1482279200269" expanded="true" signature="62:84" ph="SELECT * FRO... bookings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/validatebooking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1482278889082" expanded="true" signature="625:788" ph="SELECT IFNUL... " />
+            <marker date="1482278889082" expanded="true" signature="1656:1780" ph="SELECT bus_i... active_busses" />
+            <marker date="1482278889082" expanded="true" signature="1991:2130" ph="INSERT INTO bookings... " />
+            <marker date="1482278889082" expanded="true" signature="1991:2141" ph="INSERT INTO bookings... " />
+            <marker date="1482278889082" expanded="true" signature="2309:2461" ph="UPDATE activ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/addbusinsert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <marker date="1482281349213" expanded="true" signature="532:697" ph="INSERT INTO bus... " />
+            <marker date="1482281349213" expanded="true" signature="681:697" ph="INSERT INTO bus... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/deletebus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <marker date="1482282448095" expanded="true" signature="136:172" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register/owner_reg_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register/insert_owner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <marker date="1482063965525" expanded="true" signature="966:1109" ph="INSERT INTO owner... " />
+            <marker date="1482063965525" expanded="true" signature="1131:1240" ph="INSERT INTO login... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register/add-record-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-533">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <marker date="1482063982418" expanded="true" signature="1036:1210" ph="INSERT INTO customer... " />
+            <marker date="1482063982418" expanded="true" signature="1232:1341" ph="INSERT INTO login... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1482289544001" expanded="true" signature="799:903" ph="SELECT IFNUL... " />
+            <marker date="1482289544001" expanded="true" signature="814:877" ph="SELECT role login" />
+            <marker date="1482289544001" expanded="true" signature="814:889" ph="SELECT role login" />
+            <marker date="1482289544001" expanded="true" signature="1075:1172" ph="SELECT IFNUL... " />
+            <marker date="1482289544001" expanded="true" signature="1083:1158" ph="SELECT role login" />
+            <marker date="1482289544001" expanded="true" signature="1185:1237" ph="SELECT role_... login" />
+            <marker date="1482289544001" expanded="true" signature="1185:1238" ph="SELECT IFNUL... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/add_bus_route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Customer/customerhomepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Customer/bookings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+          <folding>
+            <marker date="1482291305355" expanded="true" signature="124:171" ph="SELECT * FRO... bookings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/activatebus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1370">
+          <caret line="149" column="52" selection-start-line="149" selection-start-column="52" selection-end-line="149" selection-end-column="52" />
+          <folding>
+            <marker date="1482274080099" expanded="true" signature="197:216" ph="SELECT * FRO... route" />
+            <marker date="1482274080099" expanded="true" signature="259:290" ph="SELECT first... route" />
+            <marker date="1482274080099" expanded="true" signature="259:329" ph="SELECT first... " />
+            <marker date="1482274080099" expanded="true" signature="297:329" ph="SELECT secon... route" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/activatebusinsert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="e#6#134#0#PHP" expanded="true" />
+            <marker date="1482293342543" expanded="true" signature="691:864" ph="INSERT INTO bookings... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operator/addbus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="78" column="79" selection-start-line="78" selection-start-column="79" selection-end-line="78" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/admin_new_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Administrator/adminhomepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Customer/bookbus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+          <folding>
+            <marker date="1482170412312" expanded="true" signature="111:130" ph="SELECT * FRO... route" />
+            <marker date="1482170412312" expanded="true" signature="173:204" ph="SELECT first... route" />
+            <marker date="1482170412312" expanded="true" signature="173:243" ph="SELECT first... " />
+            <marker date="1482170412312" expanded="true" signature="211:243" ph="SELECT secon... route" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Customer/validatebook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding>
+            <marker date="1482214974136" expanded="true" signature="695:860" ph="SELECT IFNUL... " />
+            <marker date="1482214974136" expanded="true" signature="1753:1879" ph="SELECT bus_i... active_busses" />
+            <marker date="1482214974136" expanded="true" signature="2101:2251" ph="INSERT INTO bookings... " />
+            <marker date="1482214974136" expanded="true" signature="2428:2582" ph="UPDATE activ... " />
           </folding>
         </state>
       </provider>

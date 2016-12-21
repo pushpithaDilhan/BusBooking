@@ -24,7 +24,7 @@ session_start();
 $role_id = $_SESSION['role_id'];
 
 	$sql_insert = "INSERT INTO active_busses (bus_id , route_no , start_loc , date , time , seats_available )
-    VALUES ('$bus_id', '$role_id', '$start_station', '$date', '$time','$seats')";
+    VALUES ('$bus_id', '$route_name', '$start_station', '$date', '$time','$seats')";
 	$result3 = mysqli_query( $link,$sql_insert) or die('Could not look up user information; ' . mysqli_error($link));
 
 
