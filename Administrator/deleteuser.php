@@ -6,7 +6,7 @@
     $link->autocommit(false);
 
 	$query = "DELETE FROM customer WHERE NIC = '$id'";
-	$query2 = "DELETE FROM login WHERE role_ = '$id'";
+	$query2 = "DELETE FROM login WHERE role_id = '$id'";
 
 
 	if(mysqli_query($link, $query) AND mysqli_query($link, $query2)){
